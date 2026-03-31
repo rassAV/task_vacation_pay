@@ -98,8 +98,6 @@ class App(QWidget):
             name = self.name_input.text().strip()
             salary = float(self.salary_input.text())
             days = int(self.days_input.text())
-            if not name:
-                raise ValueError("Имя не может быть пустым")
             vacation = calc_vacation(salary, days)
 
             session = Session()
